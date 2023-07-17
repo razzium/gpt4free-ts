@@ -15,7 +15,12 @@ services:
     cap_add:
       - "SYS_ADMIN"
     environment:
-      #      - TZ=Asia/Shanghai
-      - http_proxy=${http_proxy}
-      - https_proxy=${http_proxy}
-      - rapid_api_key=${rapid_api_key}
+      PORT: 5001
+      VIRTUAL_HOST: www.gpt-ts.api.applyz.fr
+      LETSENCRYPT_HOST: www.gpt-ts.api.applyz.fr
+      LETSENCRYPT_EMAIL: razzium@live.fr
+#    environment:
+#      #      - TZ=Asia/Shanghai
+#      - http_proxy=${http_proxy}
+#      - https_proxy=${http_proxy}
+#      - rapid_api_key=${rapid_api_key}
