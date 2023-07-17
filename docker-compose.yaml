@@ -21,6 +21,11 @@ services:
       LETSENCRYPT_EMAIL: razzium@live.fr
     networks:
       - letsencrypt
+        
+networks:
+  letsencrypt:
+    external:
+      name: letsencrypt
 #    environment:
 #      #      - TZ=Asia/Shanghai
 #      - http_proxy=${http_proxy}
