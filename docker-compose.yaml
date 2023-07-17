@@ -19,6 +19,8 @@ services:
       VIRTUAL_HOST: www.gpt-ts.api.applyz.fr
       LETSENCRYPT_HOST: www.gpt-ts.api.applyz.fr
       LETSENCRYPT_EMAIL: razzium@live.fr
+    networks:
+      - letsencrypt
 #    environment:
 #      #      - TZ=Asia/Shanghai
 #      - http_proxy=${http_proxy}
