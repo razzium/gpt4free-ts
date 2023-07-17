@@ -15,7 +15,7 @@ services:
     cap_add:
       - "SYS_ADMIN"
     environment:
-      PORT: 5001
+      PORT: 13000
       VIRTUAL_HOST: www.gpt-ts.api.applyz.fr
       LETSENCRYPT_HOST: www.gpt-ts.api.applyz.fr
       LETSENCRYPT_EMAIL: razzium@live.fr
